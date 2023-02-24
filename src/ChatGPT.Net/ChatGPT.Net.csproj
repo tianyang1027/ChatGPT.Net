@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ChatGPT Unofficial .Net API</Title>
+        <Description>The Unofficial .Net API for ChatGPT is a C# library that allows developers to access ChatGPT, a chat-based language model, through a HTTP interface. With this API, developers can send queries to ChatGPT and receive responses in real-time, making it easy to integrate ChatGPT into their own applications.</Description>
+        <PackageProjectUrl>https://github.com/PawanOsman/ChatGPT.Net</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/PawanOsman/ChatGPT.Net/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageIcon>artificial-intelligence.png</PackageIcon>
+        <RepositoryUrl>https://github.com/PawanOsman/ChatGPT.Net</RepositoryUrl>
+        <PackageTags>chat,chatgpt,ai,unofficial</PackageTags>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>ChatGPT.snk</AssemblyOriginatorKeyFile>
+        <PublicSign>true</PublicSign>
+        <LangVersion>default</LangVersion>
+        <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+        <Version>1.1.5</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="SocketIOClient" Version="3.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="artificial-intelligence.png" />
+      <Resource Include="artificial-intelligence.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+</Project>
